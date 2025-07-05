@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Carnets du Présent</title>
+  <meta name="description" content="Contactez l’auteur de Carnets du Présent pour toute suggestion ou contribution.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="/">Carnets du Présent</a></h1>
+    <nav>
+      <a href="/">Accueil</a>
+      <a href="/a-propos.html">À propos</a>
+      <a href="/archives.html">Archives</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact</h2>
+    <p>N’hésitez pas à écrire pour toute collaboration, réaction ou contribution éditoriale 👇</p>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <p><label>Votre nom : <input type="text" name="name" required></label></p>
+      <p><label>Votre e-mail : <input type="email" name="email" required></label></p>
+      <p><label>Message : <textarea name="message" required></textarea></label></p>
+      <p><button type="submit">Envoyer</button></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Carnets du Présent</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+    <script>
+        // Script pour gérer le formulaire de contact
+        document.querySelector('form[name="contact"]').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Merci pour votre message !');
+        this.reset(); // Réinitialise le formulaire après envoi
+        });
+    </script>
+</body>
+</html>
