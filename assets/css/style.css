@@ -96,3 +96,19 @@ footer a {
   color: var(--accent-color);
   text-decoration: none;
 }
+.site-logo {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.logo-link {
+  display: inline-block;
+  margin-right: 2rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
